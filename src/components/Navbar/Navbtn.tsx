@@ -1,16 +1,22 @@
+import { ReactNode } from "react";
+
 interface props {
-  text: string;
+  text?: string;
+  icon?: ReactNode;
   onClick?: () => void;
   className?: string;
+  iconcss?: string;
 }
 
-const Navbtn: React.FC<props> = ({ text, className }) => {
+const Navbtn: React.FC<props> = ({ text, icon, className, iconcss }) => {
   return (
     <span>
-      <button
-        className={`py-2 px-4  rounded-full font-semibold  ${className}`}
-      >
-        {text}
+      <button className={`py-2   rounded-full font-semibold  ${className}`}>
+        {text ? (
+          <span>{text}</span>
+        ) : (
+          <span className={`${iconcss}`}>{icon}</span>
+        )}
       </button>
     </span>
   );
