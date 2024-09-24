@@ -13,7 +13,7 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className=" min-h-screen  ">
+    <section className="   ">
       <div className="flex gap-10 justify-between sticky top-20  border-b-2 bg-white py-6 z-40">
         {HomeIcon.map((item, index) => (
           <button
@@ -34,7 +34,7 @@ const Home: React.FC = () => {
       <div className="py-32">
         <Icons tab={tab?.toLowerCase()} />
       </div>
-    </div>
+    </section>
   );
 };
 

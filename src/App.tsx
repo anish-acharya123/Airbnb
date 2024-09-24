@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <main className="h-[200vh]  ">
+        <main className="  ">
           <div className="fixed w-full top-0 z-50">
             <EnhanceNav />
             <hr className="" />
@@ -23,7 +23,9 @@ function App() {
             <Route path="/:tab?" element={<EnhanceHome />} />
           </Routes>
 
-          <EnhanceFooter />
+          <div className="absolute bottom-0 w-full bg-gray-100">
+            <EnhanceFooter />
+          </div>
         </main>
       </BrowserRouter>
     </>
