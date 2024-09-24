@@ -1,5 +1,5 @@
 
-const Rooms = () => {
+const Rooms:React.FC = () => {
   return (
     <div>Rooms</div>
   )

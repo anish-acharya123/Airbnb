@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
   const profile = <Icon icon="material-symbols:account-circle" />;
 
   return (
-    <div className="flex justify-between items-center sticky top-0 py-2  ">
+    <nav className="flex justify-between items-center sticky top-0 py-2 bg-white   ">
       <figure>
         <img src={logo} alt="Airbnb" className="h-[65px] w-[px]" />
       </figure>
@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
           <Navbtn className=" " icon={profile} iconcss="text-[26px]" />
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
