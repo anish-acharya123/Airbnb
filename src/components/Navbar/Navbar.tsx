@@ -10,6 +10,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="flex justify-between items-center sticky top-0 py-2 bg-white   ">
       <figure>
+        
         <img src={logo} alt="Airbnb" className="h-[65px] w-[px]" />
       </figure>
 
