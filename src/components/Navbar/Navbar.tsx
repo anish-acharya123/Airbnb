@@ -6,8 +6,9 @@ const Navbar: React.FC = () => {
   const web = <Icon icon="mdi:web" />;
   const hamburger = <Icon icon="pajamas:hamburger" />;
   const profile = <Icon icon="material-symbols:account-circle" />;
+
   return (
-    <div className="flex justify-between items-center bg-gray- py-2">
+    <div className="flex justify-between items-center sticky top-0 py-2  ">
       <figure>
         <img src={logo} alt="Airbnb" className="h-[65px] w-[px]" />
       </figure>
