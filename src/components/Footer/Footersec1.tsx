@@ -1,8 +1,14 @@
 
 const Footersec1: React.FC = () => {
+
+  // const footer
+
   return (
-    <div className="max-w-[1440px]  w-full">
+    <div className="  w-full">
         <h2 className="text-[26px] font-medium">Inspiration for future getaways</h2>
+        <div>
+
+        </div>
     </div>
   )
 }

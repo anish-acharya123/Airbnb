@@ -13,17 +13,19 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <main className="  ">
-          <div className="fixed w-full top-0 z-50">
+        <main className="  flex  flex-col ">
+          <div className="fixed w-full top-0 z-50 text-center">
             <EnhanceNav />
             <hr className="" />
           </div>
 
-          <Routes>
-            <Route path="/:tab?" element={<EnhanceHome />} />
-          </Routes>
+          <div className="flex-1">
+            <Routes>
+              <Route path="/:tab?" element={<EnhanceHome />} />
+            </Routes>
+          </div>
 
-          <div className="absolute bottom-0 w-full bg-gray-100">
+          <div className="w-full bg-[#eeeded] ">
             <EnhanceFooter />
           </div>
         </main>

@@ -13,7 +13,7 @@ const Home: React.FC = () => {
   };
 
   return (
-    <section className="   ">
+    <section className="  ">
       <div className="flex gap-10 justify-between sticky top-20  border-b-2 bg-white py-6 z-40">
         {HomeIcon.map((item, index) => (
           <button

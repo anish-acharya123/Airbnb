@@ -17,7 +17,7 @@ const Icons: React.FC<props> = ({ tab }) => {
 
   console.log(data)
   return (
-    <div className="flex gap-4 cursor-pointer ">
+    <div className="flex gap-4 cursor-pointer flex-wrap justify-between min-h-[10rem] ">
       {data &&
         data?.map((item: any, index: any) => (
           <div className="flex flex-col gap-2" key={index}>
