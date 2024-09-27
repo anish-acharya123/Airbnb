@@ -4,9 +4,7 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
-      backgroundImage: {
-        "user-guide": "url('/src/assets/votingImage/userguide.jpg')",
-      },
+      backgroundImage: {},
     },
   },
   plugins: [],

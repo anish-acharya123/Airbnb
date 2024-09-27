@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { fetchByCategory } from "../../utils/category";
 import { Icon } from "@iconify/react";
 
@@ -6,6 +7,7 @@ interface props {
   tab?: string;
 }
 const Content: React.FC<props> = ({ tab }) => {
+  const navigate = useNavigate();
   const [data, setData] = useState<any>([]);
   const tabwithoutspace = tab?.split(" ").join("");
   useEffect(() => {
@@ -21,7 +23,11 @@ const Content: React.FC<props> = ({ tab }) => {
     <div className="grid grid-cols-5 gap-10 place-items-center  min-h-[10rem] ">
       {data &&
         data?.map((item: any, index: any) => (
-          <div className="flex flex-col gap-2 cursor-pointer " key={index}>
+          <div
+            className="flex flex-col gap-2 cursor-pointer "
+            key={index}
+            onClick={()=>navigate(`/rooms/${tabwithoutspace}/${item.id}`)}
+          >
             <img
               src={item.image_url}
               alt=""

@@ -9,7 +9,6 @@ export const fetchByCategory = async (category: any) => {
       },
     }
   );
-  console.log(res)
   const data = res.json();
   return data;
 };

@@ -4,24 +4,27 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Maxwidth from "./hoc/Maxwidth";
 import Footer from "./components/Footer/Footer";
+import Eachroom from "./components/Eachdetail/Eachroom";
 
 const EnhanceNav = Maxwidth(Navbar);
 const EnhanceHome = Maxwidth(Home);
 const EnhanceFooter = Maxwidth(Footer);
+const EnhanceEachroom = Maxwidth(Eachroom);
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <main className="  flex  flex-col ">
-          <div className="fixed w-full top-0 z-50 text-center">
+          <div className="fixed w-full top-0 z-50 text-center bg-white">
             <EnhanceNav />
             <hr className="" />
           </div>
 
           <div className="flex-1">
             <Routes>
-              <Route path="/:tab?" element={<EnhanceHome />} />
+              <Route path="/:tab?"  element={<EnhanceHome />} />
+              <Route path="/rooms/:room/:id" element={<EnhanceEachroom />} />
             </Routes>
           </div>
 

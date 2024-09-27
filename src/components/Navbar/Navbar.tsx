@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import Navbtn from "./Navbtn";
 import { Icon } from "@iconify/react";
@@ -8,12 +9,40 @@ const Navbar: React.FC = () => {
   const hamburger = <Icon icon="pajamas:hamburger" />;
   const profile = <Icon icon="material-symbols:account-circle" />;
 
+  console.log(location);
+  
   const [isdropdowm, setISdropdown] = useState(false);
+  const buttonRef = useRef<HTMLDivElement>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      dropdownRef.current &&
+      !dropdownRef.current.contains(event.target as Node) &&
+      buttonRef.current &&
+      !buttonRef.current.contains(event.target as Node)
+    ) {
+      setISdropdown(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+
 
   return (
     <nav className="flex justify-between items-center sticky top-0 py-2 bg-white   ">
       <figure>
-        <img src={logo} alt="Airbnb" className="h-[65px] w-[px]" />
+        <Link to="/trending">
+          <img src={logo} alt="Airbnb" className="h-[65px] w-[px]" />
+        </Link>
       </figure>
 
       <div>
@@ -40,6 +69,7 @@ const Navbar: React.FC = () => {
           <div
             className="flex  justify-center items-center gap-3  py-1 px-4 rounded-full  border-2  cursor-pointer"
             onClick={() => setISdropdown(!isdropdowm)}
+            ref={buttonRef}
           >
             <Navbtn className=" " icon={hamburger} iconcss="text-[16px]" />
             <Navbtn className=" " icon={profile} iconcss="text-[26px]" />
@@ -48,6 +78,7 @@ const Navbar: React.FC = () => {
             className={`${
               isdropdowm ? `absolute` : "hidden"
             } bg-red-300 p-10 -translate-x-10 translate-y-20 text-left border-spacing-32 `}
+            ref={dropdownRef}
           >
             <ul>
               <li>Sign Up</li>
