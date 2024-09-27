@@ -1,3 +1,4 @@
+import { useState } from "react";
 import logo from "../../assets/logo.png";
 import Navbtn from "./Navbtn";
 import { Icon } from "@iconify/react";
@@ -7,10 +8,11 @@ const Navbar: React.FC = () => {
   const hamburger = <Icon icon="pajamas:hamburger" />;
   const profile = <Icon icon="material-symbols:account-circle" />;
 
+  const [isdropdowm, setISdropdown] = useState(false);
+
   return (
     <nav className="flex justify-between items-center sticky top-0 py-2 bg-white   ">
       <figure>
-        
         <img src={logo} alt="Airbnb" className="h-[65px] w-[px]" />
       </figure>
 
@@ -34,9 +36,30 @@ const Navbar: React.FC = () => {
             icon={web}
           />
         </div>
-        <div className="flex  justify-center items-center gap-3  py-1 px-4 rounded-full  border-2">
-          <Navbtn className=" " icon={hamburger} iconcss="text-[16px]" />
-          <Navbtn className=" " icon={profile} iconcss="text-[26px]" />
+        <div className="relative">
+          <div
+            className="flex  justify-center items-center gap-3  py-1 px-4 rounded-full  border-2  cursor-pointer"
+            onClick={() => setISdropdown(!isdropdowm)}
+          >
+            <Navbtn className=" " icon={hamburger} iconcss="text-[16px]" />
+            <Navbtn className=" " icon={profile} iconcss="text-[26px]" />
+          </div>
+          <div
+            className={`${
+              isdropdowm ? `absolute` : "hidden"
+            } bg-red-300 p-10 -translate-x-10 translate-y-20 text-left border-spacing-32 `}
+          >
+            <ul>
+              <li>Sign Up</li>
+              <li>Login</li>
+            </ul>
+            <ul>
+              <li>Gift cards</li>
+              <li>Airbnb your home</li>
+              <li>Host an experience</li>
+              <li>Help center</li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
