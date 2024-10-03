@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react";
 
 interface props {
   tab?: string;
-}
+} 
 const Content: React.FC<props> = ({ tab }) => {
   const navigate = useNavigate();
   const [data, setData] = useState<any>([]);
