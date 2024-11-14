@@ -1,38 +1,27 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Layout from "./components/Wrappers";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
-import Home from "./components/Home/Home";
-import Maxwidth from "./hoc/Maxwidth";
-import Footer from "./components/Footer/Footer";
-import Eachroom from "./components/Eachdetail/Eachroom";
-
-const EnhanceNav = Maxwidth(Navbar);
-const EnhanceHome = Maxwidth(Home);
-const EnhanceFooter = Maxwidth(Footer);
-const EnhanceEachroom = Maxwidth(Eachroom);
 
 function App() {
+  const routes = [{ path: "/", element: <Home /> }];
   return (
     <>
-      <BrowserRouter>
-        <main className="  flex  flex-col ">
-          <div className="fixed w-full top-0 z-50 text-center bg-white">
-            <EnhanceNav />
-            <hr className="" />
-          </div>
-
-          <div className="flex-1">
-            <Routes>
-              <Route path="/:tab?"  element={<EnhanceHome />} />
-              <Route path="/rooms/:room/:id" element={<EnhanceEachroom />} />
-            </Routes>
-          </div>
-
-          <div className="w-full bg-[#eeeded] ">
-            <EnhanceFooter />
-          </div>
-        </main>
-      </BrowserRouter>
+      <Router>
+        <Layout>
+          <Routes>
+            {routes.map((route) => {
+              return (
+                <Route
+                  key={route.path}
+                  path={route.path}
+                  element={route.element}
+                />
+              );
+            })}
+          </Routes>
+        </Layout>
+      </Router>
     </>
   );
 }

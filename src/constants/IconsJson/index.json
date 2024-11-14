@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "icon": "solar:ticker-star-linear",
+    "title": "icons"
+  },
+  {
+    "id": 2,
+    "icon": "guidance:hotel-room",
+    "title": "Rooms"
+  },
+  {
+    "id": 3,
+    "icon": "tdesign:tea",
+    "title": "Bed & breakfasts"
+  },
+  {
+    "id": 4,
+    "icon": "streamline:trending-content",
+    "title": "trending"
+  },
+  {
+    "id": 6,
+    "icon": "hugeicons:castle-02",
+    "title": "Castles"
+  },
+  {
+    "id": 7,
+    "icon": "hugeicons:lake",
+    "title": "Lake"
+  },
+  {
+    "id": 8,
+    "icon": "game-icons:camping-tent",
+    "title": "Camping"
+  },
+  {
+    "id": 9,
+    "icon": "healthicons:city-outline",
+    "title": "Top Cities"
+  },
+  {
+    "id": 10,
+    "icon": "mdi:golf-tee",
+    "title": "Golfing"
+  },
+  {
+    "id": 11,
+    "icon": "tdesign:palace-4",
+    "title": "Mansions"
+  },
+  {
+    "id": 12,
+    "icon": "mdi:snowflake",
+    "title": "Arctic"
+  },
+  {
+    "id": 13,
+    "icon": "radix-icons:home",
+    "title": "Earth homes"
+  },
+  {
+    "id": 14,
+    "icon": "mdi:farm-home-outline",
+    "title": "Farms"
+  },
+  {
+    "id": 15,
+    "icon": "ph:warehouse-duotone",
+    "title": "Tiny Homes"
+  },
+  {
+    "id": 16,
+    "icon": "cil:dinner",
+    "title": "Luxe"
+  },
+  {
+    "id": 17,
+    "icon": "maki:amusement-park",
+    "title": "National parks"
+  },
+  {
+    "id": 18,
+    "icon": "hugeicons:ufo",
+    "title": "OMG!"
+  }
+]
