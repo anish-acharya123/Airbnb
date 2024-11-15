@@ -5,6 +5,6 @@ export const NavbuttonLabels = [
   },
   {
     id: 2,
-    label: "Experience",
+    label: "Experiences",
   },
 ];

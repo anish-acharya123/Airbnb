@@ -1,10 +1,11 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Button from "../../../UI/Button";
+import React from "react";
 
 const Profilemenu = ({
   label = "Airbnb your home",
   iconClasses = {
-    labelButton: " text-[1rem] font-medium ",
+    labelButton: " text-[1rem] font-medium text-gray-700 ",
     earthIcon: "text-xl font-bold",
   },
 }) => {
@@ -21,12 +22,12 @@ const Profilemenu = ({
         icon="mingcute:earth-line"
         className={`${labelButtonClass} ${iconClasses.earthIcon}`}
       />
-      <div className="mx-auto flex items-center justify-center border-2 ml-2 py-2 px-4 rounded-full hover:shadow-md">
-        <Icon icon="ci:hamburger-md" className="text-3xl" />
-        <Icon icon="ix:user-profile-filled" className="text-3xl" />
+      <div className="mx-auto flex items-center gap-3 justify-center border-2 ml-2 py-2 px-2  pl-3 rounded-full hover:shadow-md">
+        <Icon icon="ci:hamburger-md" className="text-xl text-black" />
+        <Icon icon="tdesign:user-circle-filled" className="text-3xl" />
       </div>
     </>
   );
 };
 
-export default Profilemenu;
+export default React.memo(Profilemenu);

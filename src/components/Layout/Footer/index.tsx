@@ -1,11 +1,12 @@
+import { Container } from "../../Wrappers/Container";
 import MaxwidthContainer from "../../Wrappers/Maxwidth";
 
 const Footer = () => {
   return (
     <MaxwidthContainer>
-      <div className="min-h-[200vh]">
-        Footer
-        </div>;
+      <Container>
+        <div>anish</div>
+      </Container>
     </MaxwidthContainer>
   );
 };

@@ -14,7 +14,7 @@ const SkeletonHotel = ({ count }: { count: number }) => {
               width: "100%",
               height: {
                 xs: "16rem",
-                sm: "18rem",
+                // sm: "18rem",
               },
               borderRadius: " 1rem",
             }}

@@ -14,7 +14,7 @@ const Navbar: FC = () => {
           <Group>
             <figure>
               <Link to="/">
-                <img src={Logo} alt="Logo" height={300} width={130} />
+                <img src={Logo} alt="Logo" className="h-16" />
               </Link>
             </figure>
           </Group>

@@ -6,31 +6,33 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 const Hotelsection: FC<IHotelsectionProps> = ({
   image,
   price,
-  host,
+  // host,
   location,
   rating,
   year,
 }) => {
   return (
-    <section>
+    <section className="leading-snug">
       <figure>
         <img
           src={image}
-          className="h-72 w-80 rounded-2xl"
+          className="h-64 w-72 rounded-2xl"
           alt={`Room in ${location}, Nepal`}
         />
       </figure>
       <Container>
-        <h2 className="text-lg font-medium">{location}, Nepal</h2>
+        <h2 className=" font-medium mt-2">{location}, Nepal</h2>
         <p className="space-x-2">
           <Icon icon="ic:round-star" className="inline" />
-          <span className="text-lg font-medium">{rating}</span>
+          <span className=" font-medium">{rating}</span>
         </p>
       </Container>
-      <p className="text-lg text-gray-500 ">
-        Stay with {host}. Hosting for {year} years
+      <p className=" text-gray-500 ">
+        {/* Stay with {host}. */}
+        Hosting for {year} years
       </p>
-      <p className="text-lg">
+      <p className=" text-gray-500 ">Dec 15 - 20</p>
+      <p className="">
         <span className="font-medium ">${price} </span>night
       </p>
     </section>

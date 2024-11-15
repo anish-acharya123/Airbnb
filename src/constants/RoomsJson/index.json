@@ -268,5 +268,59 @@
       { "icon": "heating", "title": "Heating" },
       { "icon": "restaurant", "title": "On-site restaurant" }
     ]
+  },
+  {
+    "id": 11,
+    "image": "https://cdn.rawgit.com/abbassiddiqi/airbnb-api/4e6cff48/images/flat7.jpg",
+    "title": "Eco-friendly lodge near Chitwan National Park",
+    "location": "Chitwan",
+    "guests": 2,
+    "year": 6,
+    "bedrooms": 1,
+    "beds": 1,
+    "baths": 1,
+    "pricePerNight": 45,
+    "priceCurrency": "USD",
+    "rating": 4.6,
+    "reviews": 130,
+    "host": {
+      "name": "Sita",
+      "profileImage": "https://example.com/profile_sita.jpg",
+      "superhost": true
+    },
+    "description": "Stay close to nature at this eco-lodge, just minutes from Chitwan National Park. Ideal for wildlife enthusiasts.",
+    "amenities": [
+      { "icon": "garden", "title": "Lush garden" },
+      { "icon": "campfire", "title": "Campfire setup" },
+      { "icon": "wifi", "title": "Wi-Fi" },
+      { "icon": "tour-guide", "title": "Tour guide access" }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://cdn.rawgit.com/abbassiddiqi/airbnb-api/4e6cff48/images/flat2.jpg",
+    "title": "Mountain view room in Pokhara",
+    "location": "Pokhara",
+    "guests": 3,
+    "year": 2,
+    "bedrooms": 1,
+    "beds": 1,
+    "baths": 1,
+    "pricePerNight": 35,
+    "priceCurrency": "USD",
+    "rating": 4.7,
+    "reviews": 180,
+    "host": {
+      "name": "Kiran",
+      "profileImage": "https://example.com/profile_kiran.jpg",
+      "superhost": false
+    },
+    "description": "Wake up to breathtaking mountain views from this scenic room in Pokhara, ideal for nature lovers.",
+    "amenities": [
+      { "icon": "mountain", "title": "Mountain view" },
+      { "icon": "balcony", "title": "Private balcony" },
+      { "icon": "wifi", "title": "Free Wi-Fi" },
+      { "icon": "kitchen", "title": "Kitchen access" }
+    ]
   }
 ]
