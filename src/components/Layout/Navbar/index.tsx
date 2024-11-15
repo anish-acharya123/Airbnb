@@ -32,7 +32,7 @@ const Navbar: FC = () => {
 
 export default Navbar;
 
-const Group = ({ children }: { children: React.ReactNode }) => {
+export const Group = ({ children }: { children: React.ReactNode }) => {
   return (
     <section className="flex items-center justify-between  ">
       {children}

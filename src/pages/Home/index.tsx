@@ -36,7 +36,7 @@ const Hotel = () => {
     return <p>Error fetching data: {error.message}</p>;
 
   return (
-    <div className="py-4">
+    <div className="py-4 pb-20">
       <MaxwidthContainer>
         {!isDataLoading ? (
           <List
