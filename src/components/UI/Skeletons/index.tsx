@@ -17,6 +17,7 @@ const SkeletonHotel = ({ count }: { count: number }) => {
                 sm: "18rem",
                 md: "20rem",
               },
+              borderRadius: " 1rem",
             }}
           />
           <div className="flex justify-between mt-2">
@@ -26,10 +27,6 @@ const SkeletonHotel = ({ count }: { count: number }) => {
                 ...css,
                 width: {
                   xs: "40%",
-                  sm: "35%",
-                  md: "30%",
-                  lg: "25%",
-                  xl: "20%",
                 },
               }}
             />
@@ -38,15 +35,33 @@ const SkeletonHotel = ({ count }: { count: number }) => {
               sx={{
                 ...css,
                 width: {
-                  xs: "20%",
-                  sm: "18%",
-                  md: "15%",
-                  lg: "12%",
-                  xl: "10%",
+                  xs: "10%",
                 },
               }}
             />
           </div>
+          <Skeleton
+            variant="text"
+            sx={{
+              ...css,
+              width: {
+                xs: "20%",
+              },
+            }}
+          />
+          <Skeleton
+            variant="text"
+            sx={{
+              ...css,
+              width: {
+                xs: "20%",
+                sm: "18%",
+                md: "15%",
+                lg: "12%",
+                xl: "10%",
+              },
+            }}
+          />
         </div>
       ))}
     </>
@@ -63,7 +78,7 @@ const SkeletonIcon = ({ count }: { count: number }) => {
             sx={{
               ...css,
               width: "3rem",
-              height: "3rem",
+              height: "2rem",
             }}
           />
           <Skeleton

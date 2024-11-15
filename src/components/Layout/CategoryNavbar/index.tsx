@@ -9,14 +9,20 @@ import useCustomNavigation from "../../../hooks/useCustomNavigation";
 import Button from "../../UI/Button";
 import List from "../../UI/List";
 import api from "../../../constants/IconsJson/index.json";
+import useScroll from "../../../utils/ScrollEvent";
 
 const CategoryNavbar = () => {
   const { goTo } = useCustomNavigation();
   const [searchParams] = useSearchParams();
   const query = searchParams.get("tab");
+  const isScroll = useScroll();
 
-  const { data, error, isLoading } = useCustomQuery(["IconQuery"], api);
-  console.log(data, error, isLoading);
+  const { data, error, isLoading } = useCustomQuery<categoryDataProps>(
+    ["IconQuery"],
+    api
+  );
+
+  console.log(error);
 
   const renderItem = useCallback(
     (item: categoryDataProps) => (
@@ -27,9 +33,9 @@ const CategoryNavbar = () => {
             query === item.title
               ? " border-b-2  border-black opacity-100 "
               : "border-white opacity-50"
-          } flex flex-col  items-center  hover:opacity-100 hover:border-b-2 hover:border-gray-400 border-b-2  py-2`}
+          } flex flex-col  items-center  hover:opacity-100 hover:border-b-2 hover:border-gray-400 border-b-2  py-4`}
           icon={item.icon}
-          iconClass="text-4xl"
+          iconClass="text-3xl"
           labelClass="text-[14px]"
           onclick={() => goTo(`/?tab=${item.title}`)}
         />
@@ -39,23 +45,25 @@ const CategoryNavbar = () => {
   );
 
   return (
-    <MaxwidthContainer>
-      <Container>
-        {data && data.length > 0 ? (
-          <>
-            <List
-              className="flex flex-row justify-between w-full"
-              items={data}
-              renderItem={renderItem}
-            />
-          </>
-        ) : (
-          <>
-            <SkeletonIcon count={17} />
-          </>
-        )}
-      </Container>
-    </MaxwidthContainer>
+    <div className={`${isScroll && "shadow-md"}`}>
+      <MaxwidthContainer>
+        <Container>
+          {!isLoading ? (
+            <>
+              <List
+                className="flex flex-row justify-between w-full"
+                items={data}
+                renderItem={renderItem}
+              />
+            </>
+          ) : (
+            <>
+              <SkeletonIcon count={17} />
+            </>
+          )}
+        </Container>
+      </MaxwidthContainer>
+    </div>
   );
 };
 

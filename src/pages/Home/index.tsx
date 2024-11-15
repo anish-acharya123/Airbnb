@@ -1,4 +1,3 @@
-import { useQuery } from "@tanstack/react-query";
 import { IjsonProps } from "./index.types";
 import { SkeletonHotel } from "../../components/UI/Skeletons";
 import api from "../../constants/RoomsJson/index.json";
@@ -7,17 +6,13 @@ import List from "../../components/UI/List";
 import Hotelsection from "../../components/UI/Hotelsection";
 import Cardcontainer from "../../components/Wrappers/Cardcontainer";
 import { useCallback } from "react";
-
-const fetchHotels = async (): Promise<IjsonProps[]> => {
-  // await new Promise((resolve) => setTimeout(resolve, 3000));
-  return Promise.resolve(api);
-};
+import { useCustomQuery } from "../../hooks/useCustomQuery";
 
 const Hotel = () => {
-  const { data, error, isLoading, isFetching } = useQuery<IjsonProps[]>({
-    queryKey: ["hotels"],
-    queryFn: fetchHotels,
-  });
+  const { data, error, isLoading, isFetching } = useCustomQuery<IjsonProps>(
+    ["hotels"],
+    api
+  );
   const isDataLoading = isLoading || isFetching;
 
   const renderItem = useCallback(

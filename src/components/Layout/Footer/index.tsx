@@ -4,6 +4,7 @@ const Footer = () => {
   return (
     <MaxwidthContainer>
       <div className="min-h-[200vh]">
+        Footer
         </div>;
     </MaxwidthContainer>
   );
