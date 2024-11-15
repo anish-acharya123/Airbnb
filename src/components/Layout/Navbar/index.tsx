@@ -1,18 +1,14 @@
-import { FC, useState } from "react";
+import { FC } from "react";
 import { Link } from "react-router-dom";
 import { Container } from "../../Wrappers/Container";
 import Logo from "../../../assets/logo.png";
 import MaxwidthContainer from "../../Wrappers/Maxwidth";
 import Button from "../../UI/Button";
+import Userdestination from "../SmallComponents/userDestination";
 
 const Navbar: FC = () => {
-  const [active, setActive] = useState("Stays");
   const labelButtonClass =
-    "hover:bg-slate-200 transition-all text-gray-500 px-3 py-2";
-
-  const ActiveButton = (clickedOne: string) => {
-    setActive(clickedOne);
-  };
+    "hover:bg-slate-200 transition-all text-gray-500 px-3 py-2 rounded-md";
 
   return (
     <nav className="py-2 border-b-2 ">
@@ -26,24 +22,7 @@ const Navbar: FC = () => {
             </figure>
           </Group>
           <Group>
-            <div className="flex gap-4 text-xl font-medium">
-              <Button
-                label="Stays"
-                className={`px-3 py-2 ${
-                  active === "Stays" ? "font-semibold " : `${labelButtonClass}`
-                }`}
-                onclick={() => ActiveButton("Stays")}
-              />
-              <Button
-                label="Experience"
-                className={`px-3 py-2 ${
-                  active === "Experience"
-                    ? "font-semibold text-black"
-                    : ` ${labelButtonClass}`
-                }`}
-                onclick={() => ActiveButton("Experience")}
-              />
-            </div>
+            <Userdestination />
           </Group>
           <Group>
             <Button
@@ -69,6 +48,8 @@ export default Navbar;
 
 const Group = ({ children }: { children: React.ReactNode }) => {
   return (
-    <section className="flex items-center justify-between  ">{children}</section>
+    <section className="flex items-center justify-between  ">
+      {children}
+    </section>
   );
 };

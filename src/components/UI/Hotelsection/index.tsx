@@ -16,7 +16,7 @@ const Hotelsection: FC<IHotelsectionProps> = ({
       <figure>
         <img
           src={image}
-          className="h-80 w-80 rounded-2xl"
+          className="h-72 w-80 rounded-2xl"
           alt={`Room in ${location}, Nepal`}
         />
       </figure>
