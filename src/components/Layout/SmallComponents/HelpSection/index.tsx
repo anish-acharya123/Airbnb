@@ -15,7 +15,9 @@ const Helpsection = ({ label, constant }: HelpsectionProps) => {
             renderItem={(item) => (
               <li key={item.id}>
                 <a href="#">
-                  <span className="hover:underline text-gray-500 font-medium">{item.label}</span>
+                  <span className="hover:underline text-gray-700 ">
+                    {item.label}
+                  </span>
                 </a>
               </li>
             )}

@@ -2,6 +2,7 @@ import { FOOTER_SECTIONS } from "../../../constants/FooterConstant";
 import { Container } from "../../Wrappers/Container";
 import MaxwidthContainer from "../../Wrappers/Maxwidth";
 import { Group } from "../Navbar";
+import Airbnbsection from "../SmallComponents/AirbnbSection";
 import HelpSection from "../SmallComponents/HelpSection";
 import InspirationSection from "../SmallComponents/InspirationSection";
 
@@ -27,7 +28,9 @@ const Footer = () => {
         </MaxwidthContainer>
       </Group>
       <Group>
-        <div>anish</div>
+        <MaxwidthContainer>
+          <Airbnbsection />
+        </MaxwidthContainer>
       </Group>
     </div>
   );
