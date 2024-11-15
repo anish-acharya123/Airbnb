@@ -18,8 +18,8 @@ const InspirationSection = () => {
             <li
               key={item.id}
               className={`${
-                activeIndex === item.id ? " border-black" : " "
-              } border-b-2 py-6`}
+                activeIndex === item.id ? " border-black border-b-2 text-black" : "text-gray-500 "
+              }  py-4`}
             >
               <Button
                 label={item.label}
@@ -34,12 +34,12 @@ const InspirationSection = () => {
         <List
           items={NAVIGATION_ITEMS}
           renderItem={(item) => (
-            <li className="grid grid-cols-6 gap-8 ">
+            <li className="grid grid-cols-6 gap-6 ">
               {activeIndex === item.id &&
                 item.items.map((element, id) => (
                   <a href={element.url} key={id}>
                     <p className="font-medium">{element.label}</p>
-                    <p>{element.description}</p>
+                    <p className="text-gray-500 font-medium">{element.description}</p>
                   </a>
                 ))}
             </li>

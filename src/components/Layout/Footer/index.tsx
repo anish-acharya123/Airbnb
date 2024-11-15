@@ -1,8 +1,4 @@
-import {
-  AIRBNB_CONSTANT,
-  HOSTING_CONSTANT,
-  SUPPORT_CONSTANT,
-} from "../../../constants/FooterConstant";
+import { FOOTER_SECTIONS } from "../../../constants/FooterConstant";
 import { Container } from "../../Wrappers/Container";
 import MaxwidthContainer from "../../Wrappers/Maxwidth";
 import { Group } from "../Navbar";
@@ -17,11 +13,17 @@ const Footer = () => {
       </Group>
       <Group>
         <MaxwidthContainer>
-          <Container>
-            <HelpSection label="Support" constant={SUPPORT_CONSTANT} />
-            <HelpSection label="Hosting" constant={HOSTING_CONSTANT} />
-            <HelpSection label="Airbnb" constant={AIRBNB_CONSTANT} />
-          </Container>
+          <div className="border-b-2 border-gray-300">
+            <Container>
+              {FOOTER_SECTIONS.map((section) => (
+                <HelpSection
+                  key={section.label}
+                  label={section.label}
+                  constant={section.items}
+                />
+              ))}
+            </Container>
+          </div>
         </MaxwidthContainer>
       </Group>
       <Group>

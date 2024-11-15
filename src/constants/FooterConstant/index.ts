@@ -216,82 +216,38 @@ export const NAVIGATION_ITEMS: NavigationData[] = [
   },
 ];
 
-export const SUPPORT_CONSTANT = [
+export const FOOTER_SECTIONS = [
   {
-    id: 1,
-    label: "Help Center",
+    label: "Support",
+    items: [
+      { id: 1, label: "Help Center" },
+      { id: 2, label: "AirCover" },
+      { id: 3, label: "Anti-discrimination" },
+      { id: 4, label: "Disability support" },
+      { id: 5, label: "Cancellation options" },
+      { id: 6, label: "Cancellation options" },
+    ],
   },
   {
-    id: 2,
-    label: "AirCover",
+    label: "Hosting",
+    items: [
+      { id: 1, label: "Airbnb your home" },
+      { id: 2, label: "AirCover for Hosts" },
+      { id: 3, label: "Hosting Resources" },
+      { id: 4, label: "Hosting responsibly" },
+      { id: 5, label: "Airbnb-friendly apartments" },
+      { id: 6, label: "Join a free hosting class" },
+    ],
   },
   {
-    id: 3,
-    label: "Anit-discrimination",
-  },
-  {
-    id: 4,
-    label: "Disability support",
-  },
-  {
-    id: 5,
-    label: "Disability support",
-  },
-  {
-    id: 6,
-    label: "Cancellation options",
-  },
-];
-
-export const HOSTING_CONSTANT = [
-  {
-    id: 1,
-    label: "Airbnb your home",
-  },
-  {
-    id: 2,
-    label: "AirCover for Hosts",
-  },
-  {
-    id: 3,
-    label: "Hosting Resources",
-  },
-  {
-    id: 4,
-    label: "Hosting responsibly",
-  },
-  {
-    id: 5,
-    label: "Airbnb-friendly apartments",
-  },
-  {
-    id: 6,
-    label: "Join a fress hosting class",
-  },
-];
-export const AIRBNB_CONSTANT = [
-  {
-    id: 1,
-    label: "Newsroom",
-  },
-  {
-    id: 2,
-    label: "New features",
-  },
-  {
-    id: 3,
-    label: "Careers",
-  },
-  {
-    id: 4,
-    label: "Investors",
-  },
-  {
-    id: 5,
-    label: "Gift Cards",
-  },
-  {
-    id: 6,
-    label: "Airbnb.org emergency stays",
+    label: "Airbnb",
+    items: [
+      { id: 1, label: "Newsroom" },
+      { id: 2, label: "New features" },
+      { id: 3, label: "Careers" },
+      { id: 4, label: "Investors" },
+      { id: 5, label: "Gift Cards" },
+      { id: 6, label: "Airbnb.org emergency stays" },
+    ],
   },
 ];
