@@ -253,8 +253,14 @@ export const FOOTER_SECTIONS = [
 ];
 
 export const AIRBNB_CONTSTANT = [
-  { id: 1, label: "Terms.", element: "#" },
-  { id: 2, label: "Sitemap.", element: "#" },
-  { id: 3, label: "Privacy.", element: "#" },
-  { id: 3, label: "Your Privacy Choices.", element: "#" },
+  { id: 1, label: "Terms", element: "#" },
+  { id: 2, label: "Sitemap", element: "#" },
+  { id: 3, label: "Privacy", element: "#" },
+  { id: 3, label: "Your Privacy Choices", element: "#" },
+];
+
+export const Footer_ICON_CONTSTANT = [
+  { id: 1, icon: "uil:facebook", target: "#" },
+  { id: 2, icon: "fa-brands:twitter-square", target: "#" },
+  { id: 3, icon: "mage:instagram-square", target: "#" },
 ];
