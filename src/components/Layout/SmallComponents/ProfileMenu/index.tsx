@@ -22,7 +22,7 @@ const Profilemenu = ({
         icon="mingcute:earth-line"
         className={`${labelButtonClass} ${iconClasses.earthIcon}`}
       />
-      <div className="mx-auto flex items-center gap-3 justify-center border-2 ml-2 py-2 px-2  pl-3 rounded-full hover:shadow-md">
+      <div className="mx-auto cursor-pointer flex items-center gap-3 justify-center border-2 ml-2 py-2 px-2  pl-3 rounded-full hover:shadow-md">
         <Icon icon="ci:hamburger-md" className="text-xl text-black" />
         <Icon icon="tdesign:user-circle-filled" className="text-3xl" />
       </div>

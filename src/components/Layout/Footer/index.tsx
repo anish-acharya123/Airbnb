@@ -8,7 +8,7 @@ import InspirationSection from "../SmallComponents/InspirationSection";
 
 const Footer = () => {
   return (
-    <div className="bg-[#f3f3f3] py-14">
+    <div className="bg-[#F7F7F7] py-14">
       <Group>
         <InspirationSection />
       </Group>

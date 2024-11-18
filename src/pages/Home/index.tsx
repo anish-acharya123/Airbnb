@@ -32,8 +32,7 @@ const Hotel = () => {
     []
   );
 
-  if (error instanceof Error)
-    return <p>Error fetching data: {error.message}</p>;
+  if (error) return <p>Error fetching data: {error.message}</p>;
 
   return (
     <div className="py-4 pb-10">

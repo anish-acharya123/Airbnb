@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
+// import { AIRBNB_CONTSTANT } from "../../../../constants/FooterConstant";
 
 const Airbnbsection = () => {
   return (

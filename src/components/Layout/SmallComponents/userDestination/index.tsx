@@ -9,7 +9,7 @@ const Userdestination = () => {
     "hover:bg-slate-200 transition-all text-gray-500 px-3 py-2 rounded-md";
 
   return (
-    <div className="flex gap-4 text-lg font-semibold">
+    <div className="flex gap-4 text-lg font-semibold ">
       <List
         items={NavbuttonLabels}
         renderItem={(item) => (

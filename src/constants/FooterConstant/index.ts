@@ -251,3 +251,10 @@ export const FOOTER_SECTIONS = [
     ],
   },
 ];
+
+export const AIRBNB_CONTSTANT = [
+  { id: 1, label: "Terms.", element: "#" },
+  { id: 2, label: "Sitemap.", element: "#" },
+  { id: 3, label: "Privacy.", element: "#" },
+  { id: 3, label: "Your Privacy Choices.", element: "#" },
+];

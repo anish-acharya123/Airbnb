@@ -33,7 +33,7 @@ const CategoryNavbar = () => {
             query === item.title
               ? " border-b-2  border-black opacity-100 "
               : "border-white opacity-60"
-          } flex flex-col  items-center font-semibold  hover:opacity-100 hover:border-b-2 hover:border-gray-400 border-b-2  py-4`}
+          } flex flex-col  items-center font-semibold  hover:opacity-100 hover:border-b-2 hover:border-gray-400 border-b-2  py-5`}
           icon={item.icon}
           iconClass="text-2xl"
           labelClass="text-sm"
