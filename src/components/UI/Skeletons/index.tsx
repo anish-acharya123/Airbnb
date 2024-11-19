@@ -94,23 +94,23 @@ const SkeletonIcon = ({ count }: { count: number }) => {
   );
 };
 
-const SkeletonCompany = ({ count }: { count: number }) => {
+const SkeletonEachTitle = () => {
+  return <Skeleton variant="text" sx={{ width: "50%", height: "3rem" }} />;
+};
+
+const SkeletonPhoto = ({ className }: { className: string }) => {
   return (
     <>
-      {Array.from({ length: count }, (_, index) => (
-        <div key={index} className="flex flex-col mb-4">
-          <Skeleton
-            variant="rectangular"
-            sx={{
-              ...css,
-              width: "100%",
-              height: "14rem",
-            }}
-          />
-        </div>
-      ))}
+      <Skeleton
+        variant="rectangular"
+        className={`${className}`}
+        sx={{
+          ...css,
+          height: "100%",
+        }}
+      />
     </>
   );
 };
 
-export { SkeletonHotel, SkeletonIcon, SkeletonCompany };
+export { SkeletonHotel, SkeletonIcon, SkeletonEachTitle, SkeletonPhoto };

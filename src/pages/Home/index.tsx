@@ -25,7 +25,7 @@ const Hotel = () => {
 
   if (actualData?.length === 0) {
     actualData = data?.filter(
-      (item) => item.category.toLowerCase() === "rooms"
+      (item) => item.category.toLowerCase() === "icons"
     );
   }
 
@@ -41,7 +41,7 @@ const Hotel = () => {
           title={item.title}
           year={item.year}
           onClick={
-            () => goTo(`/details?query=${query}&id=${item.id}`)
+            () => goTo(`/details?category=${query}&id=${item.id}`)
             // window.open(`/details?query=${query}&id=${item.id}`, "_blank")
           }
         />
