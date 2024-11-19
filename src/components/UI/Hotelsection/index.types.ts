@@ -6,4 +6,5 @@ export type IHotelsectionProps = {
   price: number;
   host: string;
   year: number;
+  onClick: () => void;
 };

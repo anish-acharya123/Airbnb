@@ -6,13 +6,13 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 const Hotelsection: FC<IHotelsectionProps> = ({
   image,
   price,
-  // host,
   location,
   rating,
   year,
+  onClick,
 }) => {
   return (
-    <section className="leading-snug">
+    <section className="leading-snug" onClick={onClick}>
       <figure>
         <img
           src={image}

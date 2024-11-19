@@ -55,6 +55,276 @@
           { "icon": "wifi", "title": "Free Wi-Fi" },
           { "icon": "kitchen", "title": "Kitchen access" }
         ]
+      },
+      {
+        "id": 3,
+        "image": "https://cdn.rawgit.com/abbassiddiqi/airbnb-api/4e6cff48/images/flat3.jpg",
+        "title": "Traditional Newari homestay in Bhaktapur",
+        "location": "Bhaktapur",
+        "guests": 2,
+        "year": 8,
+        "bedrooms": 1,
+        "beds": 1,
+        "baths": 1,
+        "pricePerNight": 15,
+        "priceCurrency": "USD",
+        "rating": 4.5,
+        "reviews": 90,
+        "host": {
+          "name": "Raju",
+          "profileImage": "https://example.com/profile_raju.jpg",
+          "superhost": true
+        },
+        "description": "Experience traditional Newari culture in this quaint homestay located near Bhaktapur’s historic sites.",
+        "amenities": [
+          { "icon": "city", "title": "City view" },
+          { "icon": "garden", "title": "Garden" },
+          { "icon": "heater", "title": "Heating" },
+          { "icon": "room-service", "title": "Room service" }
+        ]
+      },
+      {
+        "id": 4,
+        "image": "https://cdn.rawgit.com/abbassiddiqi/airbnb-api/4e6cff48/images/flat4.jpg",
+        "title": "Modern apartment in Patan",
+        "location": "Patan",
+        "guests": 4,
+        "year": 4,
+        "bedrooms": 2,
+        "beds": 2,
+        "baths": 1,
+        "pricePerNight": 50,
+        "priceCurrency": "USD",
+        "rating": 4.9,
+        "reviews": 150,
+        "host": {
+          "name": "Mina",
+          "profileImage": "https://example.com/profile_mina.jpg",
+          "superhost": true
+        },
+        "description": "Enjoy a blend of modern amenities and traditional decor in this stylish Patan apartment, perfect for families.",
+        "amenities": [
+          { "icon": "decor", "title": "Traditional decor" },
+          { "icon": "kitchen", "title": "Kitchen access" },
+          { "icon": "wifi", "title": "Free Wi-Fi" },
+          { "icon": "private-entrance", "title": "Private entrance" }
+        ]
+      },
+      {
+        "id": 5,
+        "image": "https://cdn.rawgit.com/abbassiddiqi/airbnb-api/4e6cff48/images/flat5.jpg",
+        "title": "Luxury suite in Lalitpur",
+        "location": "Lalitpur",
+        "guests": 2,
+        "year": 9,
+        "bedrooms": 1,
+        "beds": 1,
+        "baths": 1,
+        "pricePerNight": 100,
+        "priceCurrency": "USD",
+        "rating": 5.0,
+        "reviews": 300,
+        "host": {
+          "name": "Anil",
+          "profileImage": "https://example.com/profile_anil.jpg",
+          "superhost": true
+        },
+        "description": "A luxurious suite with all modern amenities in the heart of Lalitpur. Ideal for a premium stay.",
+        "amenities": [
+          { "icon": "city", "title": "City view" },
+          { "icon": "air-conditioning", "title": "Air conditioning" },
+          { "icon": "gym", "title": "Gym access" },
+          { "icon": "hot-tub", "title": "Hot tub" }
+        ]
+      },
+      {
+        "id": 6,
+        "image": "https://cdn.rawgit.com/abbassiddiqi/airbnb-api/4e6cff48/images/flat6.jpg",
+        "title": "Budget-friendly hostel in Thamel",
+        "location": "Kathmandu",
+        "guests": 1,
+        "year": 1,
+        "bedrooms": 1,
+        "beds": 1,
+        "baths": 1,
+        "pricePerNight": 10,
+        "priceCurrency": "USD",
+        "rating": 4.1,
+        "reviews": 110,
+        "host": {
+          "name": "Laxmi",
+          "profileImage": "https://example.com/profile_laxmi.jpg",
+          "superhost": false
+        },
+        "description": "A backpacker's paradise in the bustling streets of Thamel, offering affordability and convenience.",
+        "amenities": [
+          { "icon": "wifi", "title": "Wi-Fi" },
+          { "icon": "locker", "title": "Personal locker" },
+          { "icon": "shared-kitchen", "title": "Shared kitchen" },
+          { "icon": "bicycle", "title": "Bicycle rental" }
+        ]
+      },
+      {
+        "id": 7,
+        "image": "https://cdn.rawgit.com/abbassiddiqi/airbnb-api/4e6cff48/images/flat7.jpg",
+        "title": "Eco-friendly lodge near Chitwan National Park",
+        "location": "Chitwan",
+        "guests": 2,
+        "year": 6,
+        "bedrooms": 1,
+        "beds": 1,
+        "baths": 1,
+        "pricePerNight": 45,
+        "priceCurrency": "USD",
+        "rating": 4.6,
+        "reviews": 130,
+        "host": {
+          "name": "Sita",
+          "profileImage": "https://example.com/profile_sita.jpg",
+          "superhost": true
+        },
+        "description": "Stay close to nature at this eco-lodge, just minutes from Chitwan National Park. Ideal for wildlife enthusiasts.",
+        "amenities": [
+          { "icon": "garden", "title": "Lush garden" },
+          { "icon": "campfire", "title": "Campfire setup" },
+          { "icon": "wifi", "title": "Wi-Fi" },
+          { "icon": "tour-guide", "title": "Tour guide access" }
+        ]
+      },
+      {
+        "id": 8,
+        "image": "https://cdn.rawgit.com/abbassiddiqi/airbnb-api/4e6cff48/images/flat8.jpg",
+        "title": "Lakefront villa in Pokhara",
+        "location": "Pokhara",
+        "guests": 6,
+        "year": 3,
+        "bedrooms": 3,
+        "beds": 3,
+        "baths": 2,
+        "pricePerNight": 150,
+        "priceCurrency": "USD",
+        "rating": 5.0,
+        "reviews": 50,
+        "host": {
+          "name": "Gopal",
+          "profileImage": "https://example.com/profile_gopal.jpg",
+          "superhost": true
+        },
+        "description": "Luxurious lakefront villa with serene views and ample space, ideal for families or groups seeking a tranquil stay.",
+        "amenities": [
+          { "icon": "lake-view", "title": "Lake view" },
+          { "icon": "pool", "title": "Private pool" },
+          { "icon": "kitchen", "title": "Kitchen" },
+          { "icon": "air-conditioning", "title": "Air conditioning" }
+        ]
+      },
+      {
+        "id": 9,
+        "image": "https://cdn.rawgit.com/abbassiddiqi/airbnb-api/4e6cff48/images/flat4.jpg",
+        "title": "Treehouse experience near Nagarkot",
+        "location": "Nagarkot",
+        "guests": 2,
+        "year": 5,
+        "bedrooms": 1,
+        "beds": 1,
+        "baths": 1,
+        "pricePerNight": 60,
+        "priceCurrency": "USD",
+        "rating": 4.8,
+        "reviews": 75,
+        "host": {
+          "name": "Nabin",
+          "profileImage": "https://example.com/profile_nabin.jpg",
+          "superhost": true
+        },
+        "description": "A unique treehouse experience in the hills of Nagarkot. Ideal for adventurers and nature lovers.",
+        "amenities": [
+          { "icon": "nature-view", "title": "Nature view" },
+          { "icon": "balcony", "title": "Private balcony" },
+          { "icon": "heating", "title": "Heating" },
+          { "icon": "restaurant", "title": "On-site restaurant" }
+        ]
+      },
+      {
+        "id": 10,
+        "image": "https://cdn.rawgit.com/abbassiddiqi/airbnb-api/4e6cff48/images/flat6.jpg",
+        "title": "Treehouse experience near Nagarkot",
+        "location": "Nagarkot",
+        "guests": 2,
+        "year": 2,
+        "bedrooms": 1,
+        "beds": 1,
+        "baths": 1,
+        "pricePerNight": 60,
+        "priceCurrency": "USD",
+        "rating": 4.8,
+        "reviews": 75,
+        "host": {
+          "name": "Nabin",
+          "profileImage": "https://example.com/profile_nabin.jpg",
+          "superhost": true
+        },
+        "description": "A unique treehouse experience in the hills of Nagarkot. Ideal for adventurers and nature lovers.",
+        "amenities": [
+          { "icon": "nature-view", "title": "Nature view" },
+          { "icon": "balcony", "title": "Private balcony" },
+          { "icon": "heating", "title": "Heating" },
+          { "icon": "restaurant", "title": "On-site restaurant" }
+        ]
+      },
+      {
+        "id": 11,
+        "image": "https://cdn.rawgit.com/abbassiddiqi/airbnb-api/4e6cff48/images/flat7.jpg",
+        "title": "Eco-friendly lodge near Chitwan National Park",
+        "location": "Chitwan",
+        "guests": 2,
+        "year": 6,
+        "bedrooms": 1,
+        "beds": 1,
+        "baths": 1,
+        "pricePerNight": 45,
+        "priceCurrency": "USD",
+        "rating": 4.6,
+        "reviews": 130,
+        "host": {
+          "name": "Sita",
+          "profileImage": "https://example.com/profile_sita.jpg",
+          "superhost": true
+        },
+        "description": "Stay close to nature at this eco-lodge, just minutes from Chitwan National Park. Ideal for wildlife enthusiasts.",
+        "amenities": [
+          { "icon": "garden", "title": "Lush garden" },
+          { "icon": "campfire", "title": "Campfire setup" },
+          { "icon": "wifi", "title": "Wi-Fi" },
+          { "icon": "tour-guide", "title": "Tour guide access" }
+        ]
+      },
+      {
+        "id": 12,
+        "image": "https://cdn.rawgit.com/abbassiddiqi/airbnb-api/4e6cff48/images/flat2.jpg",
+        "title": "Mountain view room in Pokhara",
+        "location": "Pokhara",
+        "guests": 3,
+        "year": 2,
+        "bedrooms": 1,
+        "beds": 1,
+        "baths": 1,
+        "pricePerNight": 35,
+        "priceCurrency": "USD",
+        "rating": 4.7,
+        "reviews": 180,
+        "host": {
+          "name": "Kiran",
+          "profileImage": "https://example.com/profile_kiran.jpg",
+          "superhost": false
+        },
+        "description": "Wake up to breathtaking mountain views from this scenic room in Pokhara, ideal for nature lovers.",
+        "amenities": [
+          { "icon": "mountain", "title": "Mountain view" },
+          { "icon": "balcony", "title": "Private balcony" },
+          { "icon": "wifi", "title": "Free Wi-Fi" },
+          { "icon": "kitchen", "title": "Kitchen access" }
+        ]
       }
     ]
   },

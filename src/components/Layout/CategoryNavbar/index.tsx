@@ -14,7 +14,7 @@ import useScroll from "../../../utils/ScrollEvent";
 const CategoryNavbar = () => {
   const { goTo } = useCustomNavigation();
   const [searchParams] = useSearchParams();
-  const query = searchParams.get("tab");
+  const query = searchParams.get("tab") ?? "Icons";
   const isScroll = useScroll();
 
   const { data, error, isLoading } = useCustomQuery<categoryDataProps>(

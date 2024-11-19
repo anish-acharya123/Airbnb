@@ -1,10 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
 import Layout from "./components/Wrappers";
 import "./App.css";
+import { routes } from "./constants/Routes";
 
 function App() {
-  const routes = [{ path: "/", element: <Home /> }];
   return (
     <>
       <Router>

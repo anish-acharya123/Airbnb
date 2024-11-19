@@ -8,19 +8,27 @@ import Hotelsection from "../../components/UI/Hotelsection";
 import Cardcontainer from "../../components/Wrappers/Cardcontainer";
 import { useCallback } from "react";
 import { useCustomQuery } from "../../hooks/useCustomQuery";
+import useCustomNavigation from "../../hooks/useCustomNavigation";
 
 const Hotel = () => {
+  const { goTo } = useCustomNavigation();
   const [searchParams] = useSearchParams();
   const query = searchParams.get("tab");
-  console.log(query);
   const { data, error, isLoading, isFetching } = useCustomQuery<IjsonProps>(
     ["hotels"],
     api
   );
   const isDataLoading = isLoading || isFetching;
-  const actualData = data?.filter(
+  let actualData = data?.filter(
     (item) => item.category.toLowerCase() === query?.toLowerCase()
   );
+
+  if (actualData?.length === 0) {
+    actualData = data?.filter(
+      (item) => item.category.toLowerCase() === "rooms"
+    );
+  }
+
   const renderItem = useCallback(
     (item: listingProps) => (
       <li key={item.id} className="space-y-1 cursor-pointer">
@@ -32,6 +40,7 @@ const Hotel = () => {
           image={item.image}
           title={item.title}
           year={item.year}
+          onClick={() => goTo(`/details`)}
         />
       </li>
     ),
