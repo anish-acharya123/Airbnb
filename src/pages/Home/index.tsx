@@ -13,7 +13,7 @@ import useCustomNavigation from "../../hooks/useCustomNavigation";
 const Hotel = () => {
   const { goTo } = useCustomNavigation();
   const [searchParams] = useSearchParams();
-  const query = searchParams.get("tab");
+  const query = searchParams.get("tab") ?? "Icons";
   const { data, error, isLoading, isFetching } = useCustomQuery<IjsonProps>(
     ["hotels"],
     api
@@ -40,11 +40,14 @@ const Hotel = () => {
           image={item.image}
           title={item.title}
           year={item.year}
-          onClick={() => goTo(`/details`)}
+          onClick={
+            () => goTo(`/details?query=${query}&id=${item.id}`)
+            // window.open(`/details?query=${query}&id=${item.id}`, "_blank")
+          }
         />
       </li>
     ),
-    []
+    [query]
   );
 
   if (error) return <p>Error fetching data: {error.message}</p>;

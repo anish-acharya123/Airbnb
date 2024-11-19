@@ -1,4 +1,3 @@
-import { useSearchParams } from "react-router-dom";
 import { Container } from "../../Wrappers/Container";
 import { SkeletonIcon } from "../../UI/Skeletons";
 import { useCallback } from "react";
@@ -10,12 +9,15 @@ import Button from "../../UI/Button";
 import List from "../../UI/List";
 import api from "../../../constants/IconsJson/index.json";
 import useScroll from "../../../utils/ScrollEvent";
+import useCustomLocation from "../../../hooks/useCustomLocation";
+import useCustomSearchParams from "../../../hooks/useCustomSearchParams";
 
 const CategoryNavbar = () => {
   const { goTo } = useCustomNavigation();
-  const [searchParams] = useSearchParams();
-  const query = searchParams.get("tab") ?? "Icons";
+  const {query} = useCustomSearchParams()
+  const searchquery = query("tab")?? "Icons"
   const isScroll = useScroll();
+  const Exactpath = useCustomLocation();
 
   const { data, error, isLoading } = useCustomQuery<categoryDataProps>(
     ["IconQuery"],
@@ -30,7 +32,7 @@ const CategoryNavbar = () => {
         <Button
           label={item.title}
           className={`${
-            query === item.title
+            searchquery === item.title
               ? " border-b-2  border-black opacity-100 "
               : "border-white opacity-60"
           } flex flex-col  items-center font-semibold  hover:opacity-100 hover:border-b-2 hover:border-gray-400 border-b-2  py-5`}
@@ -44,8 +46,13 @@ const CategoryNavbar = () => {
     [query]
   );
 
+
   return (
-    <div className={`${isScroll && "shadow-md"}`}>
+    <div
+      className={`${isScroll ? "shadow-md" : ""} ${
+        Exactpath === "/details" ? "hidden" : "block"
+      }`}
+    >
       <MaxwidthContainer>
         <Container>
           {!isLoading ? (

@@ -332,7 +332,7 @@
     "category": "Trending",
     "listings": [
       {
-        "id": 5,
+        "id": 1,
         "image": "https://cdn.rawgit.com/abbassiddiqi/airbnb-api/4e6cff48/images/flat5.jpg",
         "title": "Luxury suite in Lalitpur",
         "location": "Lalitpur",
@@ -359,7 +359,7 @@
         ]
       },
       {
-        "id": 7,
+        "id": 2,
         "image": "https://cdn.rawgit.com/abbassiddiqi/airbnb-api/4e6cff48/images/flat7.jpg",
         "title": "Eco-friendly lodge near Chitwan National Park",
         "location": "Chitwan",
