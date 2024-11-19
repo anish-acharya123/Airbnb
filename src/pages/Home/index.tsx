@@ -1,6 +1,6 @@
 import { IjsonProps } from "./index.types";
 import { SkeletonHotel } from "../../components/UI/Skeletons";
-import api from "../../constants/RoomsJson/index.json";
+import api from "../../constants/RoomsJson/room.json";
 import MaxwidthContainer from "../../components/Wrappers/Maxwidth";
 import List from "../../components/UI/List";
 import Hotelsection from "../../components/UI/Hotelsection";
