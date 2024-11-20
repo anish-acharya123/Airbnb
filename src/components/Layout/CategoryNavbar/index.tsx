@@ -34,11 +34,11 @@ const CategoryNavbar = () => {
           className={`${
             searchquery === item.title
               ? " border-b-2  border-black opacity-100 "
-              : "border-white opacity-60"
-          } flex flex-col  items-center font-semibold  hover:opacity-100 hover:border-b-2 hover:border-gray-400 border-b-2  py-5`}
+              : "border-white opacity-70"
+          } flex flex-col space-y-2 items-center font-medium  hover:opacity-100 hover:border-b-2 hover:border-gray-400 border-b-2  py-4`}
           icon={item.icon}
           iconClass="text-2xl"
-          labelClass="text-sm"
+          labelClass="text-xs"
           onclick={() => goTo(`/?tab=${item.title}`)}
         />
       </li>

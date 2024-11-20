@@ -20,73 +20,78 @@
     "title": "trending"
   },
   {
-    "id": 6,
+    "id": 5,
     "icon": "hugeicons:castle-02",
     "title": "Castles"
   },
   {
-    "id": 7,
+    "id": 6,
     "icon": "hugeicons:lake",
     "title": "Lake"
   },
   {
-    "id": 8,
+    "id": 7,
     "icon": "game-icons:camping-tent",
     "title": "Camping"
   },
   {
-    "id": 9,
+    "id": 8,
     "icon": "healthicons:city-outline",
     "title": "Top Cities"
   },
   {
-    "id": 10,
+    "id": 9,
     "icon": "mdi:golf-tee",
     "title": "Golfing"
   },
   {
-    "id": 11,
+    "id": 10,
     "icon": "tdesign:palace-4",
     "title": "Mansions"
   },
   {
-    "id": 12,
+    "id": 11,
     "icon": "mdi:snowflake",
     "title": "Arctic"
   },
   {
-    "id": 13,
+    "id": 12,
     "icon": "radix-icons:home",
     "title": "Earth homes"
   },
   {
-    "id": 14,
+    "id": 13,
     "icon": "mdi:farm-home-outline",
     "title": "Farms"
   },
   {
-    "id": 15,
+    "id": 14,
     "icon": "ph:warehouse-duotone",
     "title": "Tiny Homes"
   },
   {
-    "id": 16,
+    "id": 15,
     "icon": "cil:dinner",
     "title": "Luxe"
   },
   {
-    "id": 17,
+    "id": 16,
     "icon": "maki:amusement-park",
     "title": "National parks"
   },
   {
-    "id": 18,
+    "id": 17,
     "icon": "hugeicons:ufo",
     "title": "OMG!"
   },
   {
-    "id": 19,
+    "id": 18,
     "icon": "maki:amusement-park",
     "title": "National parks"
+  },
+  {
+    "id": 19,
+    "icon": "mdi:golf-tee",
+    "title": "Golfing"
   }
 ]

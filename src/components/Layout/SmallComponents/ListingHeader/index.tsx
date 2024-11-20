@@ -7,10 +7,10 @@ const ListingHeader = () => {
 
   return (
     <div className=" py-8 border-b-2 ">
-      <h1 className="text-2xl font-semibold tracking-tight">
+      <h1 className="text-xl font-400 tracking-tight">
         Entire cabin in Nepal
       </h1>
-      <ul className="flex text-center items-center text-[1.05rem] opacity-95 ">
+      <ul className="flex text-center items-center  opacity-95 ">
         <li className=" after:content-['.'] after:mx-1">
           {specificItem?.guests} guests
         </li>
@@ -22,7 +22,7 @@ const ListingHeader = () => {
         </li>
         <li className="flex items-center ">1 bath</li>
       </ul>
-      <ul className="flex items-center font-medium text-[1.05rem]  ">
+      <ul className="flex items-center font-medium   ">
         <li className="flex   items-center ">
           <Icon icon="ic:baseline-star" className="text-xl" />
         </li>

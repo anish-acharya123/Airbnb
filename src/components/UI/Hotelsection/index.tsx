@@ -12,7 +12,7 @@ const Hotelsection: FC<IHotelsectionProps> = ({
   onClick,
 }) => {
   return (
-    <section className="leading-snug" onClick={onClick}>
+    <section className="leading-snug text-sm" onClick={onClick}>
       <figure>
         <img
           src={image}

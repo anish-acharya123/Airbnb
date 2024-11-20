@@ -5,7 +5,7 @@ import React from "react";
 const Profilemenu = ({
   label = "Airbnb your home",
   iconClasses = {
-    labelButton: " text-[1rem] font-medium text-gray-700 tracking-tight",
+    labelButton: " text-sm font-medium text-gray-700 tracking-tight",
     earthIcon: "text-xl font-bold",
   },
 }) => {
