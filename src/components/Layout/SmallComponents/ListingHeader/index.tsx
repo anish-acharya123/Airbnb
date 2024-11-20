@@ -3,6 +3,7 @@ import { useEachDetailsContext } from "../../../../context/EachDetailsContext";
 
 const ListingHeader = () => {
   const { specificItem, isLoading, isFetching } = useEachDetailsContext();
+  console.log(isFetching, isLoading);
 
   return (
     <div className=" py-8 border-b-2 w-4/6">
