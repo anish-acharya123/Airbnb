@@ -1,3 +1,4 @@
+import BedDetails from "../BedDetails";
 import HostDescription from "../HostDescription";
 import HostDetails from "../HostDetails";
 import HostInfo from "../HostInfo";
@@ -10,6 +11,7 @@ const ListingInfoSection = () => {
       <HostDetails />
       <HostInfo />
       <HostDescription />
+      <BedDetails />
     </div>
   );
 };
