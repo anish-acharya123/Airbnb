@@ -1,5 +1,4 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { Group } from "../../Navbar";
 
 const BedDetails = () => {
   return (
