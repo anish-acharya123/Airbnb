@@ -6,7 +6,7 @@ const ListingHeader = () => {
   console.log(isFetching, isLoading);
 
   return (
-    <div className=" py-8 border-b-2 w-4/6">
+    <div className=" py-8 border-b-2 ">
       <h1 className="text-2xl font-semibold tracking-tight">
         Entire cabin in Nepal
       </h1>

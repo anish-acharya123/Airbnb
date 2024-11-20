@@ -34,7 +34,7 @@ export default Navbar;
 
 export const Group = ({ children }: { children: React.ReactNode }) => {
   return (
-    <section className="flex items-center justify-between ">
+    <section className="flex items-center  ">
       {children}
     </section>
   );

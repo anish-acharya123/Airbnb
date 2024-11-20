@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 
 const fetchHotels = async <TData>(api: TData[]): Promise<TData[]> => {
-  await new Promise((resolve) => setTimeout(resolve, 500));
+  // await new Promise((resolve) => setTimeout(resolve, 500));
   return Promise.resolve(api);
 };
 
