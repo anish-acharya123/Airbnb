@@ -6,6 +6,7 @@ import { IjsonProps } from "../Home/index.types";
 import { EachDetailsProvider } from "../../context/EachDetailsContext";
 import EachHeaderSection from "../../components/Layout/SmallComponents/EachHeaderSection";
 import EachImageGallery from "../../components/Layout/SmallComponents/EachImageGallery";
+import ListingDetailsPage from "../../components/Layout/ListingDetailsPage";
 
 const Eachdetails = () => {
   const { query } = useCustomSearchParams();
@@ -42,6 +43,7 @@ const Eachdetails = () => {
         <MaxwidthContainer>
           <EachHeaderSection />
           <EachImageGallery />
+          <ListingDetailsPage />
         </MaxwidthContainer>
       </div>
     </EachDetailsProvider>

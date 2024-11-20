@@ -1,0 +1,39 @@
+import { Icon } from "@iconify/react/dist/iconify.js";
+import { useEachDetailsContext } from "../../../../context/EachDetailsContext";
+
+const ListingHeader = () => {
+  const { specificItem, isLoading, isFetching } = useEachDetailsContext();
+
+  return (
+    <div className=" py-8 border-b-2 w-4/6">
+      <h1 className="text-2xl font-semibold tracking-tight">
+        Entire cabin in Nepal
+      </h1>
+      <ul className="flex text-center items-center text-[1.05rem] opacity-95 ">
+        <li className=" after:content-['.'] after:mx-1">
+          {specificItem?.guests} guests
+        </li>
+        <li className=" after:content-['.'] after:mx-1">
+          {specificItem?.bedrooms} bedrooms
+        </li>
+        <li className=" after:content-['.'] after:mx-1">
+          {specificItem?.beds} beds
+        </li>
+        <li className="flex items-center ">1 bath</li>
+      </ul>
+      <ul className="flex items-center font-medium text-[1.05rem]  ">
+        <li className="flex   items-center ">
+          <Icon icon="ic:baseline-star" className="text-xl" />
+        </li>
+        <li className=" ml-1 after:content-['.'] after:mx-1 flex items-center justify-center">
+          <p className="">{specificItem?.rating}</p>
+        </li>
+        <li>
+          <p className="underline">{specificItem?.reviews} reviews</p>
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+export default ListingHeader;
