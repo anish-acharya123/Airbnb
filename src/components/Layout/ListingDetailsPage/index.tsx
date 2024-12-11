@@ -4,10 +4,10 @@ import ListingInfoSection from "../SmallComponents/ListingInfoSection";
 
 const ListingDetailsPage = () => {
   return (
-    <Container>
+    <div className="flex gap-4">
       <ListingInfoSection />
       <BookingSummarySection />
-    </Container>
+    </div>
   );
 };
 

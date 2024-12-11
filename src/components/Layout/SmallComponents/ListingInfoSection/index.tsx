@@ -1,4 +1,5 @@
 import BedDetails from "../BedDetails";
+import EachAmenities from "../EachAmenities";
 import HostDescription from "../HostDescription";
 import HostDetails from "../HostDetails";
 import HostInfo from "../HostInfo";
@@ -12,6 +13,7 @@ const ListingInfoSection = () => {
       <HostInfo />
       <HostDescription />
       <BedDetails />
+      <EachAmenities/>
     </div>
   );
 };

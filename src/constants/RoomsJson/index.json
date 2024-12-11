@@ -182,10 +182,10 @@
     },
     "description": "Stay close to nature at this eco-lodge, just minutes from Chitwan National Park. Ideal for wildlife enthusiasts.",
     "amenities": [
-      { "icon": "garden", "title": "Lush garden" },
-      { "icon": "campfire", "title": "Campfire setup" },
-      { "icon": "wifi", "title": "Wi-Fi" },
-      { "icon": "tour-guide", "title": "Tour guide access" }
+      { "icon": "material-symbols:garden", "title": "Lush garden" },
+      { "icon": "material-symbols:campfire", "title": "Campfire setup" },
+      { "icon": "twemoji:globe-with-meridians", "title": "Wi-Fi" },
+      { "icon": "twemoji:tourist", "title": "Tour guide access" }
     ]
   },
   {

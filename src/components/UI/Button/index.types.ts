@@ -1,3 +1,5 @@
+import type { IconifyIcon } from "@iconify/react";
+
 export type BtnProps = {
   label?: string;
   variant?: "";
@@ -5,6 +7,6 @@ export type BtnProps = {
   className?: string;
   iconClass?: string;
   labelClass?: string;
-  icon?: string;
+  icon?: IconifyIcon | string;
   onclick?: () => void;
 };
