@@ -1,4 +1,3 @@
-// import { Container } from "../../Wrappers/Container";
 import BookingSummarySection from "../SmallComponents/BookingSummarySection";
 import ListingInfoSection from "../SmallComponents/ListingInfoSection";
 
@@ -12,4 +11,3 @@ const ListingDetailsPage = () => {
 };
 
 export default ListingDetailsPage;
-  
