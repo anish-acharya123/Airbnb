@@ -5,7 +5,7 @@ import { useCustomQuery } from "../../../hooks/useCustomQuery";
 import { categoryDataProps } from "./index.types";
 import MaxwidthContainer from "../../Wrappers/Maxwidth";
 import useCustomNavigation from "../../../hooks/useCustomNavigation";
-import Button from "../../UI/Button";
+import Btn from "../../UI/Btn";
 import List from "../../UI/List";
 import api from "../../../constants/IconsJson/index.json";
 import useScroll from "../../../utils/ScrollEvent";
@@ -29,7 +29,7 @@ const CategoryNavbar = () => {
   const renderItem = useCallback(
     (item: categoryDataProps) => (
       <li key={item.id} className="space-y-1 cursor-pointer">
-        <Button
+        <Btn
           label={item.title}
           className={`${
             searchquery === item.title

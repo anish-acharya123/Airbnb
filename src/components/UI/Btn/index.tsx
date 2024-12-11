@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { BtnProps } from "./index.types";
 
-const Button = ({
+const Btn = ({
   label,
   className,
   iconClass,
@@ -20,4 +20,4 @@ const Button = ({
     </button>
   );
 };
-export default Button;
+export default Btn;

@@ -1,4 +1,4 @@
-import Button from "../../../UI/Button";
+import Btn from "../../../UI/Btn";
 
 const HostDescription = () => {
   return (
@@ -12,7 +12,7 @@ const HostDescription = () => {
         house <br /> is located directly below Samten monastery Rimbick, in the
         district of Darjeeling, state of West Bengal ....
       </p>
-      <Button
+      <Btn
         label="Show more"
         className="flex flex-row-reverse items-center justify-center font-medium"
         labelClass="underline"

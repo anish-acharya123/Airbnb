@@ -1,5 +1,5 @@
 import { useEachDetailsContext } from "../../../../context/EachDetailsContext";
-import Button from "../../../UI/Button";
+import Btn from "../../../UI/Btn";
 import { SkeletonEachTitle } from "../../../UI/Skeletons";
 import { Container } from "../../../Wrappers/Container";
 
@@ -17,14 +17,14 @@ const EachHeaderSection = () => {
         </h1>
       )}
       <div className="flex  gap-2  text-sm font-medium">
-        <Button
+        <Btn
           className="flex justify-center items-center gap-1 p-2 rounded-lg hover:bg-slate-100"
           icon="fluent:share-ios-20-regular"
           iconClass="text-xl"
           label="Share"
           labelClass="underline"
         />
-        <Button
+        <Btn
           className="flex justify-center items-center gap-1  p-2 rounded-lg hover:bg-slate-100"
           icon="solar:heart-linear"
           iconClass="text-"

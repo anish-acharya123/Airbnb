@@ -2,7 +2,7 @@ import { NAVIGATION_ITEMS } from "../../../../constants/FooterConstant";
 import MaxwidthContainer from "../../../Wrappers/Maxwidth";
 import List from "../../../UI/List";
 import Activebtn from "../../../../utils/HandleActiveBtn";
-import Button from "../../../UI/Button";
+import Btn from "../../../UI/Btn";
 
 const InspirationSection = () => {
   const { activeIndex, handleActivebtn } = Activebtn();
@@ -21,7 +21,7 @@ const InspirationSection = () => {
                 activeIndex === item.id ? " border-black border-b-2 text-black" : "text-gray-500 "
               }  py-4`}
             >
-              <Button
+              <Btn
                 label={item.label}
                 className="font-medium"
                 onclick={() => handleActivebtn(item.id)}
