@@ -9,6 +9,7 @@ import Cardcontainer from "../../components/Wrappers/Cardcontainer";
 import { useCallback } from "react";
 import { useCustomQuery } from "../../hooks/useCustomQuery";
 import useCustomNavigation from "../../hooks/useCustomNavigation";
+import { Calendar } from "@/components/UI/calendar";
 
 const Hotel = () => {
   const { goTo } = useCustomNavigation();
@@ -53,21 +54,23 @@ const Hotel = () => {
   if (error) return <p>Error fetching data: {error.message}</p>;
 
   return (
-    <div className="py-4 pb-10">
-      <MaxwidthContainer>
-        {!isDataLoading ? (
-          <List
-            items={actualData && actualData[0].listings}
-            className="grid  lg:grid-cols-6  md:grid-cols-5 sm:grid-cols-3 grid-cols-2 md:gap-6 gap-3"
-            renderItem={renderItem}
-          />
-        ) : (
-          <Cardcontainer>
-            <SkeletonHotel count={12} />
-          </Cardcontainer>
-        )}
-      </MaxwidthContainer>
-    </div>
+    <>
+      <div className="py-4 pb-10">
+        <MaxwidthContainer>
+          {!isDataLoading ? (
+            <List
+              items={actualData && actualData[0].listings}
+              className="grid  lg:grid-cols-6  md:grid-cols-5 sm:grid-cols-3 grid-cols-2 md:gap-6 gap-3"
+              renderItem={renderItem}
+            />
+          ) : (
+            <Cardcontainer>
+              <SkeletonHotel count={12} />
+            </Cardcontainer>
+          )}
+        </MaxwidthContainer>
+      </div>
+    </>
   );
 };
 

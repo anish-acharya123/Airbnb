@@ -4,6 +4,7 @@ import List from "../../../UI/List";
 
 const EachAmenities = () => {
   const { specificItem } = useEachDetailsContext();
+  console.log(specificItem);
   return (
     <div className="py-8 space-y-4 border-b-2">
       <p className="text-xl font-medium">What this place offers </p>
@@ -11,7 +12,8 @@ const EachAmenities = () => {
         items={specificItem?.amenities}
         renderItem={(item) => (
           <li>
-            <Icon icon={"material-symbols:garden"} className="bg-green-500" />
+            {item.icon}
+            <Icon icon={item.icon} className="bg-green-500 h-10 w-10" />
             <span>{item.title}</span>
           </li>
         )}

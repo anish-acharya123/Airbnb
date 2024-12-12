@@ -22,7 +22,7 @@ export function DatePickerWithRange({
   return (
     <div className={cn("grid gap-2 ", className)}>
       <Popover>
-        <div className="relative">
+        <div className=" w-full ">
           <PopoverTrigger asChild>
             <Button
               id="date"
@@ -37,7 +37,7 @@ export function DatePickerWithRange({
                   <p className="flex flex-col cursor-pointer  items-start flex-1 ">
                     <span className="font-medium text-[11px]">CHECK-IN</span>
                     <span className="text-[13px]">
-                      {date.from.toLocaleDateString("en-US")}
+                      {date.from.toLocaleDateString("en-US") }
                     </span>
                   </p>
                   <div className="h-full border border-gray-400 " />
@@ -51,7 +51,7 @@ export function DatePickerWithRange({
               )}
             </Button>
           </PopoverTrigger>
-          <PopoverContent className="w-auto p-0  " align="end">
+          <PopoverContent className="w-auto p-0" align="end">
             <Calendar
               initialFocus
               mode="range"

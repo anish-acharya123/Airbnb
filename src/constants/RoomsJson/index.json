@@ -20,10 +20,13 @@
     },
     "description": "A cozy bed and breakfast in the heart of Kathmandu with a homely vibe and local breakfast.",
     "amenities": [
-      { "icon": "wifi", "title": "Free Wi-Fi" },
-      { "icon": "breakfast", "title": "Breakfast included" },
-      { "icon": "parking", "title": "Free parking" },
-      { "icon": "air-conditioning", "title": "Air conditioning" }
+      {
+        "icon": "material-symbols-light:wifi",
+        "title": "Free Wi-Fi"
+      },
+      { "icon": "ic:outline-free-breakfast", "title": "Breakfast included" },
+      { "icon": "tabler:parking", "title": "Free parking" },
+      { "icon": "material-symbols-light:ac-unit", "title": "Air conditioning" }
     ]
   },
   {

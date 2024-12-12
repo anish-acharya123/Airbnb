@@ -7,7 +7,7 @@ const BookDate = () => {
     <div className="py- space-y-4 ">
       <div>
         <div className=" relative flex justify- border border-black  rounded-t-md border-b-0">
-          <DatePickerWithRange className="w-full  " />
+          <DatePickerWithRange  className="w-full" />
         </div>
         <div className="border border-black rounded-b-md   z-50">
           <GuestDropDown />
